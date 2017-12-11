@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_front__page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="org.caesarnapleswiki.application01.Front_Page"
+    android:background="@drawable/pine2port">
+
+    <Button
+        android:text="@string/sentence"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="500dp"
+        android:background="@android:color/holo_green_light"
+        android:layout_below="@+id/button3"
+        android:layout_alignStart="@+id/textView2" />
+
+    <Button
+        android:text="@string/markov"
+        android:layout_height="wrap_content"
+        android:id="@+id/button3"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="500dp"
+        android:background="@android:color/holo_orange_dark"
+        android:layout_below="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+
+    <Button
+        android:text="@string/word"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:background="@android:color/holo_blue_light"
+        android:layout_width="500dp"
+        android:layout_below="@+id/button2"
+        android:layout_alignStart="@+id/button2" />
+
+    <ImageView
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:adjustViewBounds="true"
+        android:visibility="visible"
+        android:drawingCacheQuality="high"
+        android:elevation="1dp"
+        android:cropToPadding="true"
+        tools:ignore="UnusedAttribute"
+        android:contentDescription="@string/logo"
+        android:src="@drawable/cnwiki"
+        android:tint="@android:color/background_dark"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/button2"
+        android:layout_width="400dp" />
+
+    <TextView
+        android:text="@string/generator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textStyle="normal|bold"
+        android:textAllCaps="true"
+        android:textSize="60dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginTop="129dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

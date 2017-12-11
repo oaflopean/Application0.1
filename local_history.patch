@@ -1,0 +1,16 @@
+Index: app/src/main/java/org/caesarnapleswiki/application01/randomw.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/org/caesarnapleswiki/application01/randomw.java	(revision )
++++ app/src/main/java/org/caesarnapleswiki/application01/randomw.java	(revision )
+@@ -46,7 +46,7 @@
+             }
+         }
+         Integer ranNum=firstNum.get(rnd.nextInt(firstNum.size()));
+-        for (int i=ranNum; ranNum < token.length-1; ranNum++) {
++        for (int i=ranNum;i< token.length-1; i++) {
+             if (token[i].contains(".") != true) {
+                 sentence.add(token[i]);
+             } else {

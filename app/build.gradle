@@ -1,0 +1,45 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.1"
+    defaultConfig {
+        applicationId "org.caesarnapleswiki.application01"
+        minSdkVersion 15
+        targetSdkVersion 25
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+        beta {
+            minSdkVersion 19
+            applicationId 'org.caesarnapleswiki.application01'
+            targetSdkVersion 25
+            versionName '1.1'
+            versionCode 5
+        }
+        releaseflavor {
+            minSdkVersion 19
+            applicationId 'org.caesarnapleswiki.application01'
+            targetSdkVersion 25
+            versionCode 6
+            versionName '1.1'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.2.0'
+    compile 'com.android.support:support-v4:25.2.0'
+    testCompile 'junit:junit:4.12'
+    compile 'commons-io:commons-io:+'
+}
